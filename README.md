@@ -13,9 +13,9 @@ Este repositório contém a resolução de um Desafio QA [Hands On] de automaç�
 
 ## Configurando ##
 
-O Firefox está configurado como default para rodar os testes, caso queira rodar com outro navegador, seguir os passos abaixo:
+O Firefox do Windows está configurado como default para rodar os testes, caso queira rodar com outro navegador ou outro sistema operacional, seguir os passos abaixo:
 
-	1° - Colocar o driver do navegador desejado na pasta "/drivers";
+	1° - Colocar o driver do navegador ou sistema operacional desejado na pasta "/drivers";
 	
 	2° - Alterar as informações para o novo driver no arquivo DesafioQaTest, linhas 19, 26 e 27;
 
