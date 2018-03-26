@@ -3,20 +3,21 @@ Desafio QA [Hands On]
 
 Este repositório contém a resolução de um Desafio QA [Hands On] de automação de cenários de compra na saraiva.com.br, utilizando Selenium Webdriver Java.
 
---
 
 ## Motivações das escolhas ##
 
-1° - Linguagem: Foi escolhido a linguagem Selenium Webdriver Java, pois eu já tive contato com java na faculdade e recentemente fiz um curso de Selenium na Alura;
-2° - Para cada cenário de teste escrito, foi criado um Teste no selenium validando cada etapa necessária para efetuar a compra do produto.
---
+	1° - Linguagem: Foi escolhido a linguagem Selenium Webdriver Java, pois eu já tive contato com java na faculdade e recentemente fiz um curso de Selenium na Alura;
+	
+	2° - Para cada cenário de teste escrito, foi criado um Teste no selenium validando cada etapa necessária para efetuar a compra do produto.
+
 
 ## Configurando ##
 
 O Firefox está configurado como default para rodar os testes, caso queira rodar com outro navegador, seguir os passos abaixo:
 
-1° - Colocar o driver do navegador desejado na pasta /drivers;
-2° - Alterar as informações para o novo driver no arquivo DesafioQaTest, linhas 19, 26 e 27;
+	1° - Colocar o driver do navegador desejado na pasta "/drivers";
+	
+	2° - Alterar as informações para o novo driver no arquivo DesafioQaTest, linhas 19, 26 e 27;
 
 --
 
@@ -25,9 +26,8 @@ Rodar o comando na pasta raiz do projeto:
 
     mvn test
 
---
 
-##Cenários de Testes:##
+## Cenários de Testes ##
 
 1 -> Validar carrinho:
 Contexto: Validar o carrinho de compras:
@@ -134,4 +134,4 @@ E: A tela do carrinho esteja aberta;
 
 Quando: For removido todos os produtos carrinho;
 
-Então: Na tela deverá conter o texto "Seu carrinho está vazio# desafio-qa
+Então: Na tela deverá conter o texto "Seu carrinho está vazio
