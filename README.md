@@ -19,7 +19,6 @@ O Firefox está configurado como default para rodar os testes, caso queira rodar
 	
 	2° - Alterar as informações para o novo driver no arquivo DesafioQaTest, linhas 19, 26 e 27;
 
---
 
 ## Executando os testes ##
 Rodar o comando na pasta raiz do projeto:
