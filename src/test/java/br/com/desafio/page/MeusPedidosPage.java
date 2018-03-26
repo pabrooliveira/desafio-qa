@@ -76,17 +76,11 @@ public class MeusPedidosPage {
 		WebElement nomeCartao = driver.findElement(By.xpath("/html/body/article/section[5]/div/ul/li[1]/div[2]/div/form/fieldset[5]/input"));
 		nomeCartao.sendKeys("CLIENTE UM TESTE");
 		
-		WebElement btnFinalizar = driver.findElement(By.className("co_bt_send_payment"));
-		btnFinalizar.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.className("co_bt_send_payment")));
 	}
 	
 	public void validarSelecaoQtd(){
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/article/section[4]/button")));
-	}
-	
-	public void validarFimCompra(){
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span[1]/div/p")));
 	}
 }

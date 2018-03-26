@@ -82,11 +82,9 @@ public class DesafioQaTest {
 		meusPedidosPage.selecionarQtd(qtdProduto);
 		meusPedidosPage.continuar();
 		meusPedidosPage.escolherEndereco();
+		meusPedidosPage.finalizarCompra();
 		
 		Assert.assertEquals(qtdProduto + " item", meusPedidosPage.validarQtd());
-		
-		meusPedidosPage.finalizarCompra();
-		meusPedidosPage.validarFimCompra();
 	}
 	
 	@Test
@@ -107,11 +105,9 @@ public class DesafioQaTest {
 		meusPedidosPage.selecionarQtd(qtdProduto);
 		meusPedidosPage.continuar();
 		meusPedidosPage.escolherEndereco();
+		meusPedidosPage.finalizarCompra();
 		
 		Assert.assertEquals(qtdProduto + " itens", meusPedidosPage.validarQtd());
-		
-		meusPedidosPage.finalizarCompra();
-		meusPedidosPage.validarFimCompra();
 	}
 	
 	@Test
